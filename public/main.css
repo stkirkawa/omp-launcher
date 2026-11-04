@@ -1,0 +1,1042 @@
+#server-list-item-dark {
+  background-color: #30303880;
+  transition: 0.4s;
+}
+
+#server-list-item-dark:hover {
+  background-color: #303038ff;
+  transition: 0.2s;
+}
+
+#server-list-item-light {
+  background-color: #e9ecf280;
+  transition: 0.4s;
+}
+
+#server-list-item-light:hover {
+  background-color: #e9ecf2ff;
+  transition: 0.2s;
+}
+
+#scroll::-webkit-scrollbar-track {
+  background: #ffffff40;
+}
+
+#scroll {
+  scrollbar-color: #ffffff40 #ffffff40;
+  scrollbar-width: thin;
+  overflow: overlay !important;
+}
+
+#scroll::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+#scroll::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+#scroll::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(to left, #ffffff40 1px, transparent 0%);
+}
+
+#scroll::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(to bottom, #ffffff40 1px, transparent 0%);
+}
+
+#scroll::-webkit-scrollbar-track:vertical {
+  background: linear-gradient(to left, #ffffff40 1px, transparent 0%);
+}
+
+#scroll::-webkit-scrollbar-track:horizontal {
+  background: linear-gradient(to bottom, #ffffff40 1px, transparent 0%);
+}
+
+#scroll::-webkit-scrollbar-thumb:hover {
+  background: #ffffff99;
+}
+
+#scroll-light::-webkit-scrollbar-track {
+  background: #1a1a1e4d;
+}
+
+#scroll-light {
+  scrollbar-color: #1a1a1e4d #1a1a1e4d;
+  scrollbar-width: thin;
+  overflow: overlay !important;
+}
+
+#scroll-light::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+#scroll-light::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+#scroll-light::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(to left, #1a1a1e4d 1px, transparent 0%);
+}
+
+#scroll-light::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(to bottom, #1a1a1e4d 1px, transparent 0%);
+}
+
+#scroll-light::-webkit-scrollbar-track:vertical {
+  background: linear-gradient(to left, #1a1a1e4d 1px, transparent 0%);
+}
+
+#scroll-light::-webkit-scrollbar-track:horizontal {
+  background: linear-gradient(to bottom, #1a1a1e4d 1px, transparent 0%);
+}
+
+#scroll-light::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1e99;
+}
+
+.titlebar-button:hover {
+  background: #897af1;
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("fonts/Proxima Nova Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("fonts/Proxima Nova Semibold.woff2") format("woff2");
+}
+
+.loader-dark {
+  position: relative;
+  border-radius: 1000px;
+  background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+  animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-dark span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  background: linear-gradient(#8477b7, #1f1f23);
+}
+
+.loader-dark span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.loader-dark span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.loader-dark span:nth-child(3) {
+  filter: blur(25px);
+}
+
+.loader-dark span:nth-child(4) {
+  filter: blur(50px);
+}
+
+.loader-dark:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 1000px;
+}
+
+.loader-light {
+  position: relative;
+  border-radius: 1000px;
+  background: linear-gradient(#8477b7, #ffffff);
+  animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-light span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  background: linear-gradient(#8477b7, #ffffff);
+}
+
+.loader-light span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.loader-light span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.loader-light span:nth-child(3) {
+  filter: blur(25px);
+}
+
+.loader-light span:nth-child(4) {
+  filter: blur(50px);
+}
+
+.loader-light:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 1000px;
+}
+
+#main-container *:focus-visible {
+  outline: none;
+}
+
+body {
+  background: #101113;
+}
+
+.kirkawa-launcher {
+  --kirkawa-accent: #f0a04b;
+  --kirkawa-muted: #8d8e92;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-height: 0;
+  padding: 8px 22px 18px;
+  overflow: auto;
+  color: #f4f1ed;
+  background:
+    radial-gradient(ellipse at 78% 2%, #f0a04b0b, transparent 34%), #101113;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.kirkawa-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 54px;
+}
+
+.kirkawa-eyebrow,
+.kirkawa-region,
+.kirkawa-server-tag,
+.kirkawa-address span,
+.kirkawa-field label,
+.kirkawa-field small,
+.kirkawa-stat span {
+  letter-spacing: 0.14em;
+}
+
+.kirkawa-eyebrow {
+  margin-bottom: 2px;
+  color: var(--kirkawa-accent);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.kirkawa-heading h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.kirkawa-heading h1 span {
+  color: #898a8d;
+  font-weight: 400;
+}
+
+.kirkawa-region {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #96969a;
+  font-size: 10px;
+}
+
+.kirkawa-region-dot,
+.kirkawa-status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6c6d70;
+}
+
+.kirkawa-region-dot {
+  background: var(--kirkawa-accent);
+  box-shadow: 0 0 12px #f0a04b88;
+}
+
+.kirkawa-account-screen {
+  --kirkawa-accent: #f0a04b;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  min-height: 0;
+  padding: 12px 22px 18px;
+  overflow: auto;
+  color: #f4f1ed;
+  background:
+    radial-gradient(ellipse at 50% 42%, #f0a04b0d, transparent 48%), #101113;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
+.kirkawa-account-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.kirkawa-account-logout {
+  padding: 8px 10px;
+  border: 1px solid #ffffff1c;
+  border-radius: 5px;
+  color: #a8a5a0;
+  background: #ffffff06;
+  font: 600 9px "Proxima Nova Regular", sans-serif;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.kirkawa-account-logout:hover:not(:disabled) {
+  border-color: #f0a04b77;
+  color: #f0b16d;
+}
+
+.kirkawa-account-logout:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.kirkawa-account-card {
+  position: relative;
+  box-sizing: border-box;
+  width: min(100%, 440px);
+  align-self: center;
+  margin: auto;
+  padding: 34px 38px 24px;
+  overflow: hidden;
+  border: 1px solid #ffffff16;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #1b1b1c, #151617 75%);
+  box-shadow: 0 18px 65px #00000045;
+}
+
+.kirkawa-account-card::before {
+  position: absolute;
+  top: -110px;
+  right: -90px;
+  width: 220px;
+  height: 220px;
+  border: 1px solid #f0a04b1c;
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.kirkawa-account-mark {
+  position: absolute;
+  top: 19px;
+  right: 27px;
+  color: #f0a04b20;
+  font-size: 76px;
+  font-weight: 600;
+  letter-spacing: -0.12em;
+  line-height: 1;
+  user-select: none;
+}
+
+.kirkawa-account-copy,
+.kirkawa-account-form,
+.kirkawa-account-switch {
+  position: relative;
+}
+
+.kirkawa-account-copy h2 {
+  margin: 15px 0 6px;
+  color: #f4f1ed;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.kirkawa-account-copy p {
+  margin: 0;
+  color: #929194;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.kirkawa-account-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.kirkawa-account-label {
+  margin: 0 0 8px;
+  color: #a3a1a0;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.kirkawa-account-input {
+  display: flex;
+  height: 42px;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 9px;
+  padding: 0 12px;
+  border: 1px solid #ffffff17;
+  border-radius: 6px;
+  background: #101113;
+}
+
+.kirkawa-account-input:focus-within {
+  border-color: #f0a04b88;
+  box-shadow: 0 0 0 2px #f0a04b12;
+}
+
+.kirkawa-account-input > span {
+  min-width: 18px;
+  color: #d99a57;
+  font-family: Consolas, monospace;
+  font-size: 10px;
+}
+
+.kirkawa-account-input input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #f4f1ed;
+  background: transparent;
+  font: 14px "Proxima Nova Regular", sans-serif;
+}
+
+.kirkawa-account-input input::placeholder {
+  color: #66676a;
+}
+
+.kirkawa-account-input input:disabled {
+  opacity: 0.6;
+}
+
+.kirkawa-account-help {
+  margin: -2px 0 19px;
+  color: #77787b;
+  font-size: 10px;
+}
+
+.kirkawa-account-error {
+  margin: 3px 0 13px;
+  color: #f08b7d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.kirkawa-account-submit {
+  display: flex;
+  height: 46px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 0 15px 0 18px;
+  border: 0;
+  border-radius: 6px;
+  color: #171411;
+  background: linear-gradient(105deg, #f0ae60, #e9903e);
+  font: 600 11px "Proxima Nova Regular", sans-serif;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: filter 140ms ease;
+}
+
+.kirkawa-account-submit:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.kirkawa-account-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.kirkawa-account-submit span {
+  font: 19px Arial, sans-serif;
+}
+
+.kirkawa-account-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 23px;
+  color: #89898c;
+  font-size: 11px;
+}
+
+.kirkawa-account-switch button {
+  padding: 4px 0;
+  border: 0;
+  color: #eeb16f;
+  background: transparent;
+  font: 600 9px "Proxima Nova Regular", sans-serif;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+}
+
+.kirkawa-account-switch button:hover {
+  color: #ffd19d;
+}
+
+.kirkawa-account-footer {
+  align-self: center;
+  color: #68696c;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.kirkawa-hero {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 270px;
+  max-height: 345px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #ffffff12;
+  border-radius: 13px;
+  background: linear-gradient(105deg, #191a1c 0%, #1c1c1b 42%, #25201b 100%);
+}
+
+.kirkawa-hero::before,
+.kirkawa-hero::after {
+  position: absolute;
+  right: -75px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid #f0a04b1b;
+  border-radius: 50%;
+  content: "";
+}
+
+.kirkawa-hero::before {
+  top: -265px;
+}
+
+.kirkawa-hero::after {
+  right: -160px;
+  bottom: -330px;
+  width: 540px;
+  height: 540px;
+}
+
+.kirkawa-hero-glow {
+  position: absolute;
+  top: -125px;
+  right: 40px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: #e38a3b18;
+  filter: blur(95px);
+}
+
+.kirkawa-hero-content {
+  z-index: 1;
+  padding: 32px 42px;
+}
+
+.kirkawa-server-tag {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #c4a47e;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.kirkawa-status-dot.online {
+  background: #8dd8a5;
+  box-shadow: 0 0 11px #8dd8a577;
+}
+
+.kirkawa-hero h2 {
+  margin: 20px 0 7px;
+  font-size: clamp(34px, 5vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+}
+
+.kirkawa-description {
+  margin: 0;
+  color: #a2a1a0;
+  font-size: 15px;
+}
+
+.kirkawa-address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 27px;
+}
+
+.kirkawa-address span {
+  color: #858587;
+  font-size: 9px;
+}
+
+.kirkawa-address strong {
+  color: #e8e5e0;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.kirkawa-hero-mark {
+  position: absolute;
+  right: 11%;
+  top: 50%;
+  display: grid;
+  width: 182px;
+  height: 182px;
+  place-items: center;
+  transform: translateY(-50%) rotate(-9deg);
+  border: 1px solid #f0a04b25;
+  border-radius: 50%;
+  color: #f0a04b24;
+  font-size: 130px;
+  font-weight: 600;
+  letter-spacing: -0.12em;
+  line-height: 1;
+  user-select: none;
+}
+
+.kirkawa-hero-index {
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #777779;
+  font-family: Consolas, monospace;
+  font-size: 10px;
+}
+
+.kirkawa-hero-index i {
+  width: 28px;
+  height: 1px;
+  background: #f0a04b77;
+}
+
+.kirkawa-controls {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.72fr) minmax(360px, 1.28fr);
+  gap: 14px;
+}
+
+.kirkawa-field {
+  min-width: 0;
+  padding: 16px 17px 12px;
+  border: 1px solid #ffffff12;
+  border-radius: 10px;
+  background: #17181a;
+}
+
+.kirkawa-field label {
+  display: block;
+  margin-bottom: 11px;
+  color: #a3a1a0;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.kirkawa-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #ffffff12;
+  border-radius: 6px;
+  background: #101113;
+}
+
+.kirkawa-input-icon {
+  color: var(--kirkawa-accent);
+  font-family: Consolas, monospace;
+  font-size: 11px;
+}
+
+.kirkawa-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #f4f1ed;
+  background: transparent;
+  font:
+    14px "Proxima Nova Regular",
+    sans-serif;
+}
+
+.kirkawa-input-wrap input::placeholder {
+  color: #66676a;
+}
+
+.kirkawa-field small {
+  display: block;
+  margin-top: 8px;
+  color: #77787b;
+  font-size: 9px;
+  letter-spacing: 0.015em;
+}
+
+.kirkawa-browse {
+  flex-shrink: 0;
+  height: 27px;
+  padding: 0 10px;
+  border: 1px solid #f0a04b44;
+  border-radius: 4px;
+  color: #e9b77f;
+  background: #f0a04b0c;
+  font:
+    600 9px "Proxima Nova Regular",
+    sans-serif;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.kirkawa-browse:hover {
+  border-color: var(--kirkawa-accent);
+  background: #f0a04b1b;
+}
+
+.kirkawa-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.kirkawa-server-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 3px 8px;
+}
+
+.kirkawa-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kirkawa-stat span {
+  color: #77787b;
+  font-size: 8px;
+}
+
+.kirkawa-stat strong {
+  color: #e5e2de;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kirkawa-stat strong i {
+  color: #898a8d;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kirkawa-stat-divider {
+  width: 1px;
+  height: 25px;
+  background: #ffffff19;
+}
+
+.kirkawa-play {
+  display: flex;
+  min-width: 190px;
+  height: 52px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 17px 0 22px;
+  border: 0;
+  border-radius: 6px;
+  color: #171411;
+  background: linear-gradient(105deg, #f0ae60, #e9903e);
+  box-shadow: 0 5px 24px #e9903e22;
+  font:
+    600 13px "Proxima Nova Regular",
+    sans-serif;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition:
+    transform 140ms ease,
+    filter 140ms ease;
+}
+
+.kirkawa-play:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.kirkawa-play:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.kirkawa-play-arrow {
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+}
+
+.kirkawa-update {
+  display: grid;
+  gap: 9px;
+  padding: 13px 16px;
+  border: 1px solid #f0a04b30;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #201d19, #17181a 72%);
+}
+
+.kirkawa-release-check,
+.kirkawa-release-notice {
+  margin-top: 18px;
+  border: 1px solid rgba(232, 155, 73, 0.28);
+  border-radius: 14px;
+  background: linear-gradient(125deg, rgba(45, 36, 30, 0.94), rgba(25, 25, 27, 0.96));
+  color: #f4f1ed;
+}
+
+.kirkawa-release-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 20px;
+  color: #d7c4ad;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.kirkawa-release-error {
+  align-items: flex-start;
+  border-color: rgba(224, 93, 82, 0.42);
+  color: #f1ada5;
+  letter-spacing: normal;
+}
+
+.kirkawa-release-error p {
+  margin: 6px 0 0;
+  color: #c5bdb6;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.kirkawa-release-error button {
+  flex: 0 0 auto;
+  border: 1px solid rgba(240, 126, 110, 0.5);
+  border-radius: 8px;
+  padding: 10px 13px;
+  background: rgba(240, 126, 110, 0.12);
+  color: #f4c1b8;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+.kirkawa-release-notice {
+  padding: 20px 22px;
+}
+
+.kirkawa-release-kicker {
+  color: #e3a264;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.kirkawa-release-notice h2 {
+  margin: 9px 0 5px;
+  font-size: 23px;
+  letter-spacing: -0.03em;
+}
+
+.kirkawa-release-required {
+  margin: 0;
+  color: #d7c4ad;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.kirkawa-release-changelog {
+  margin-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 14px;
+}
+
+.kirkawa-release-changelog strong {
+  color: #f0c290;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kirkawa-release-changelog p {
+  max-height: 150px;
+  margin: 8px 0 0;
+  overflow: auto;
+  color: #ded8d1;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.kirkawa-play:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.kirkawa-update-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  color: #e8e5e0;
+  font-size: 12px;
+}
+
+.kirkawa-update-heading span {
+  flex: 0 0 auto;
+  color: var(--kirkawa-accent);
+  font-family: Consolas, monospace;
+}
+
+.kirkawa-progress-track {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #ffffff12;
+}
+
+.kirkawa-progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d88135, #ffc37e);
+  box-shadow: 0 0 12px #f0a04b55;
+  transition: width 250ms ease;
+}
+
+.kirkawa-update p,
+.kirkawa-update small {
+  margin: 0;
+  color: #a3a1a0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.kirkawa-update small {
+  overflow: hidden;
+  color: #78787b;
+  font-family: Consolas, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .kirkawa-account-screen {
+    padding: 8px 12px 12px;
+  }
+
+  .kirkawa-account-card {
+    padding: 28px 24px 21px;
+  }
+
+  .kirkawa-account-toolbar {
+    gap: 9px;
+  }
+
+  .kirkawa-account-footer {
+    max-width: 90%;
+    line-height: 1.5;
+  }
+
+  .kirkawa-launcher {
+    gap: 13px;
+    padding: 8px 12px 12px;
+  }
+
+  .kirkawa-hero-content {
+    padding: 24px;
+  }
+
+  .kirkawa-hero-mark {
+    right: 7%;
+    width: 120px;
+    height: 120px;
+    font-size: 86px;
+  }
+
+  .kirkawa-controls {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .kirkawa-game-path {
+    display: none;
+  }
+
+  .kirkawa-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .kirkawa-server-stats {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .kirkawa-play {
+    justify-content: center;
+    gap: 18px;
+  }
+}

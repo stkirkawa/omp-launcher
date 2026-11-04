@@ -1,0 +1,50 @@
+{
+    "version":  "1.0.0",
+    "gamePackage":  {
+                        "size":  1451078984,
+                        "unpackedSize":  4278197693,
+                        "sha256":  "3eed3b410b4f36b659dd0b1de77a2a02ee0895e3bb270fccb6d2505c413e34fa"
+                    },
+    "files":  [
+                  {
+                      "path":  "SAMP/blanktex.txd",
+                      "size":  33320,
+                      "sha256":  "724eff1b323771153a172abb35fcf7fbfaa88af7bab906b51181a94e08ef2e67"
+                  },
+                  {
+                      "path":  "SAMP/CUSTOM.ide",
+                      "size":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "SAMP/custom.img",
+                      "size":  8192,
+                      "sha256":  "20de16a9abe3b2bf6f9fa415d855230a9c5487433b3c77037c2ee84d5f35df38"
+                  },
+                  {
+                      "path":  "SAMP/samaps.txd",
+                      "size":  656040,
+                      "sha256":  "d7a10e2d6497865377f61061abc13c5b7d1c81f8471410c80191640e04948285"
+                  },
+                  {
+                      "path":  "SAMP/SAMP.ide",
+                      "size":  89347,
+                      "sha256":  "dd66aa822943526dffe0f80af88547615672c9bb6e9f3fcfde6d6f8b860f93f5"
+                  },
+                  {
+                      "path":  "SAMP/SAMP.img",
+                      "size":  47261696,
+                      "sha256":  "7755badde82981616e6cdfe7f4be37ded413979f7c881e35ad63b758ca787d2f"
+                  },
+                  {
+                      "path":  "SAMP/SAMP.ipl",
+                      "size":  2291,
+                      "sha256":  "a0c31a4593de2ffe6dc734eae06c3794dcec985f53a4e985f6b895789847a26d"
+                  },
+                  {
+                      "path":  "SAMP/SAMPCOL.img",
+                      "size":  3305472,
+                      "sha256":  "aa6dabfb4b38e3b79949bbb3aa4f90c7e4fd3909feed37335b2d656e73089490"
+                  }
+              ]
+}

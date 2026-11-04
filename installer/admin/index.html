@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111214" />
+    <title>Публикация сборки · Kirkawa</title>
+    <link rel="stylesheet" href="/assets/admin.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Kirkawa, панель публикации">
+          <span class="brand-mark">K</span>
+          <span class="brand-name">KIRKAWA <small>RELEASE CONTROL</small></span>
+        </a>
+        <div class="secure-pill"><span></span> ЗАЩИЩЁННОЕ СОЕДИНЕНИЕ</div>
+      </header>
+
+      <main>
+        <section class="intro">
+          <div class="eyebrow">OPEN.MP · УПРАВЛЕНИЕ СБОРКОЙ</div>
+          <h1>Новый релиз.<br /><em>Твоя игра обновлена.</em></h1>
+          <p>
+            Загрузи архив игровой сборки, укажи версию и опиши изменения.
+            Мы проверим файлы, подпишем обновление и опубликуем его для лаунчера.
+          </p>
+        </section>
+
+        <section class="release-bar" aria-live="polite">
+          <div class="release-indicator"><span></span></div>
+          <div>
+            <div class="field-caption">СЕЙЧАС ОПУБЛИКОВАНО</div>
+            <strong id="current-version">Загрузка…</strong>
+          </div>
+          <div class="release-note">Обновление обязательно для входа в игру</div>
+        </section>
+
+        <form id="release-form" novalidate>
+          <section class="panel-card">
+            <div class="card-heading">
+              <span class="step">01</span>
+              <div>
+                <h2>Параметры релиза</h2>
+                <p>Номер версии должен быть выше текущего.</p>
+              </div>
+            </div>
+
+            <label class="field">
+              <span class="field-caption">ВЕРСИЯ ИГРЫ</span>
+              <div class="version-input">
+                <span>v</span>
+                <input
+                  id="version"
+                  name="version"
+                  type="text"
+                  inputmode="decimal"
+                  autocomplete="off"
+                  maxlength="32"
+                  placeholder="1.1.0"
+                  required
+                />
+              </div>
+              <small>Например: 1.1.0 или 2.0</small>
+            </label>
+
+            <label class="field">
+              <span class="field-caption">СПИСОК ИЗМЕНЕНИЙ</span>
+              <textarea
+                id="changelog"
+                name="changelog"
+                rows="5"
+                maxlength="12000"
+                placeholder="Что изменилось в этой версии? Можно описать каждое изменение с новой строки."
+                required
+              ></textarea>
+              <span class="field-foot">
+                <small>Этот текст игрок увидит перед обязательным обновлением.</small>
+                <small id="notes-count">0 / 12000</small>
+              </span>
+            </label>
+          </section>
+
+          <section class="panel-card upload-card">
+            <div class="card-heading">
+              <span class="step">02</span>
+              <div>
+                <h2>Архив игровой сборки</h2>
+                <p>Архив проверяется до замены опубликованной версии.</p>
+              </div>
+            </div>
+
+            <label class="dropzone" id="dropzone" for="archive">
+              <input id="archive" name="archive" type="file" accept=".7z,application/x-7z-compressed" />
+              <span class="upload-icon" aria-hidden="true">↑</span>
+              <strong id="file-label">Перетащи архив сюда или выбери файл</strong>
+              <small>Формат 7z · до 12 ГБ · внутри должны быть папка SAMP и файлы игры</small>
+              <span class="browse-button">ВЫБРАТЬ АРХИВ</span>
+            </label>
+
+            <div class="progress-wrap" id="progress-wrap" hidden>
+              <div class="progress-caption">
+                <span id="progress-label">Подготовка загрузки…</span>
+                <strong id="progress-percent">0%</strong>
+              </div>
+              <div class="progress-track"><span id="progress-fill"></span></div>
+              <small id="progress-detail">Не закрывай страницу до завершения публикации.</small>
+            </div>
+
+            <div class="error-box" id="error-box" role="alert" hidden></div>
+            <div class="success-box" id="success-box" aria-live="polite" hidden></div>
+
+            <button class="publish-button" id="publish-button" type="submit">
+              <span>ПРОВЕРИТЬ И ОПУБЛИКОВАТЬ</span>
+              <span class="button-arrow">↗</span>
+            </button>
+            <p class="signature-note">
+              <span aria-hidden="true">◆</span>
+              Подпись обновления создаётся на сервере. Приватный ключ не покидает сервер.
+            </p>
+          </section>
+        </form>
+      </main>
+
+      <footer>
+        <span>KIRKAWA · SAN ANDREAS</span>
+        <span>ПАНЕЛЬ ПУБЛИКАЦИИ</span>
+      </footer>
+    </div>
+    <script src="/assets/admin.js" defer></script>
+  </body>
+</html>
